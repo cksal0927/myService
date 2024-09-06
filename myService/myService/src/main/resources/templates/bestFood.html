@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h3>베스트 음식 5</h3>
+    <p th:each="food : ${foodList}">
+        <b th:text="${food.foodName}"></b>
+    </p>
+
+</body>
+</html>
